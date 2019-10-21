@@ -46,7 +46,7 @@ public class MainActivity extends AppCompatActivity {
             public void onItemClick(AdapterView<?> adapter, View v, int position, long arg3)
             {
                 RedditItem item = (RedditItem) adapter.getItemAtPosition(position);
-                Toast.makeText(getApplicationContext(), item.getPermalink(), Toast.LENGTH_LONG).show();
+                //Toast.makeText(getApplicationContext(), item.getPermalink(), Toast.LENGTH_LONG).show();
 
                 Intent intent = new Intent(MainActivity.this, RedditActivity.class);
                 intent.putExtra("permalink", item.getPermalink());
